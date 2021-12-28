@@ -236,13 +236,13 @@
       "properties": {
         "publicIPAllocationMethod": "[variables('publicIPAddressType')]",
         "dnsSettings": {
-          "domainNameLabel": "[concat('a', variables('publicIpName'), copyIndex(1))]"
+          "domainNameLabel": "[concat('a', variables('publicIpName'), '2')]"
         }
       }
     },
     {
       "type": "Microsoft.Network/networkInterfaces",
-      "name": "[concat('hxnic', copyIndex(1))]",
+      "name": "[concat('hxnic', '2')]",
       "apiVersion": "2019-04-01",
       "location": "[parameters('location')]",
       "copy": {
@@ -308,7 +308,7 @@
         "networkProfile": {
           "networkInterfaces": [
             {
-              "id": "[resourceId('Microsoft.Network/networkInterfaces',concat('hxnic', copyIndex(1)))]"
+              "id": "[resourceId('Microsoft.Network/networkInterfaces',concat('hxnic', '2'))]"
             }
           ]
         }
