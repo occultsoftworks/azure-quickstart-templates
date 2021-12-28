@@ -46,7 +46,7 @@
       "type": "int",
       "minValue": 10,
       "maxValue": 2048,
-      "defaultValue": 50,
+      "defaultValue": 100,
       "metadata": {
         "description": "Please select the size of the data disk you wish to deploy (value is integer GB) to hold your metadata, logs and depot (archive files). This can be any value up to 2TB (2048 GB)."
       }
