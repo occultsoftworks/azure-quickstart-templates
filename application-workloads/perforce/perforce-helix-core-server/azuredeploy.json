@@ -287,7 +287,7 @@
           "vmSize": "[variables('virtualMachineSize')]"
         },
         "osProfile": {
-          "computerName": "[concat('helixcorevm', copyIndex(1))]",
+          "computerName": "[concat('helixcorevm', '2')]",
           "adminUsername": "[parameters('adminUsername')]",
           "linuxConfiguration": "[variables('linuxConfiguration')]"
         },
